@@ -1,195 +1,203 @@
-<!--
-  Página HTML responsiva para visualização completa do ensaio ADVEC Music
-  Sem checkboxes, focada em leitura clara no celular
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <!-- Ajuste de visualização para celular -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>ADVEC Music | Ensaio Profetizando 2026</title>
-
+  <title>Sermão: Independência</title>
   <style>
-    /* Reset básico */
+    :root {
+      --bg: #f7f7f7;
+      --card-bg: #ffffff;
+      --primary: #1f3b4d;
+      --accent: #2c7a7b;
+      --text: #333333;
+      --muted: #666666;
+    }
+
     * {
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      padding: 16px;
-      background: #f2f2f2;
-      color: #333;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.25rem;
     }
 
     header {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 1.5rem;
     }
 
     header h1 {
-      font-size: 22px;
-      margin-bottom: 6px;
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
     }
 
     header p {
-      font-size: 14px;
-      color: #555;
+      font-size: 0.95rem;
+      color: var(--muted);
     }
 
     .card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 18px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: var(--card-bg);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      margin-bottom: 1rem;
     }
 
-    .card h2 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
+    h2 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
     }
 
-    .time {
-      font-weight: bold;
-      margin-bottom: 10px;
+    h3 {
+      font-size: 1.05rem;
+      color: var(--accent);
+      margin: 0.75rem 0 0.5rem;
     }
 
-    .section-title {
-      margin-top: 12px;
-      font-weight: bold;
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
     }
 
-    .info {
-      font-size: 14px;
-      line-height: 1.6;
-      margin-top: 6px;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0.5rem;
     }
 
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #777;
-      margin-top: 24px;
+    ul li {
+      position: relative;
+      padding-left: 1.1rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.95rem;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+    }
+
+    .sub-list {
+      margin-top: 0.25rem;
+      margin-left: 0.75rem;
+    }
+
+    .sub-list li::before {
+      content: "–";
+      color: var(--muted);
+    }
+
+    .verso {
+      border-left: 3px solid var(--accent);
+      padding-left: 0.75rem;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+
+    .referencia {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
-
 <body>
+  <div class="page">
+    <header>
+      <h1>Sermão: Independência</h1>
+      <p>PARTE 1 — Independência nacional × Independência dos hebreus</p>
+    </header>
 
-  <!-- Cabeçalho -->
-  <header>
-    <h1>🎶 ADVEC Music | Ensaio – Conferência Profetizando 2026 🎶</h1>
-    <p>⏰ Início: 15:00 </p>
-  </header>
+    <section class="card">
+      <h2>1. Independência nacional (Brasil)</h2>
+      <ul>
+        <li>O Brasil celebra sua independência como libertação de um domínio estrangeiro.</li>
+        <li>É uma liberdade política, territorial e civil.</li>
+      </ul>
+    </section>
 
-  <!-- Parte 1 -->
-  <div class="card">
-    <h2>🔹 Parte 1 – Repertório | Dia 06/01</h2>
-    <div class="time">⏰ 15:00 às 16:30</div>
+    <section class="card">
+      <h2>2. Independência dos hebreus (Êxodo)</h2>
+      <p>Israel também viveu uma independência: libertação do Egito.</p>
+      <p>Mas a libertação hebraica foi mais profunda:</p>
 
-    <div class="section-title">Escalados:</div>
-    <div class="info">
-      🎤 Nwohaynne, Sarah — Vocal (Solo – Ministro de Louvor)<br>
-      🎤 Denise, Isabella, Lara, Cristiano, Ronny — Vocal (Apoio – Backing Vocal)<br>
-      🥁 Igor — Bateria<br>
-      🎸 Daniel — Guitarra<br>
-      🎸 Washington — Violão<br>
-      🎸 Márcio — Baixo<br>
-      🎹 Jonatan — Teclado<br>
-      🎤 Luciana — Cantora Convidada
-    </div>
+      <h3>Libertação política (saíram do domínio egípcio)</h3>
+      <p>Israel deixa de ser escravo (propriedade) do faraó:</p>
+      <ul class="sub-list">
+        <li>Eles viviam sob trabalho forçado. Não tinham autonomia, direitos ou futuro.</li>
+      </ul>
 
-    <div class="section-title">Repertório:</div>
-    <div class="info">
-      🎵 Estamos de Pé — 🎙️ Nwohaynne<br>
-      🎵 Escape + Nunca Pare de Lutar — 🎙️ Sarah<br>
-      🎵 Todo Poderoso — 🎙️ Luciana<br>
-      🎵 Com Muito Louvor — 🎙️ Luciana
-    </div>
+      <div class="verso">
+        <p>“¹³ e os sujeitaram a cruel escravidão.</p>
+        <p>¹⁴ Tornaram-lhes a vida amarga, impondo-lhes a árdua tarefa de preparar a argamassa com o barro, fazer tijolos e executar todo tipo de trabalho agrícola; em todo esse trabalho forçado, os egípcios os sujeitavam a cruel escravidão.”</p>
+        <p class="referencia">(Êxodo 1:13-14 | NVI)</p>
+      </div>
+
+      <ul class="sub-list">
+        <li>A saída do Egito quebra o domínio imperial sobre eles.</li>
+        <li>A independência política é o primeiro passo, mas não o mais profundo.</li>
+      </ul>
+
+      <h3>Libertação espiritual (Deus os resgatou)</h3>
+      <p>Israel não apenas foge de um opressor, mas é conduzido por Deus para uma nova forma de vida, passam a pertencer a Deus:</p>
+      <ul class="sub-list">
+        <li>Deus os resgata, o povo deixa de servir aos deuses egípcios e passam a servir ao Deus vivo.</li>
+      </ul>
+
+      <div class="verso">
+        <p>“⁶ …Por isso, diga aos israelitas: "Eu sou o Senhor. Eu os livrarei do trabalho pesado imposto pelos egípcios. Eu os libertarei da escravidão e os resgatarei com braço estendido e com poderosos atos de juízo.”</p>
+        <p class="referencia">Êxodo 6:6 | NVI</p>
+      </div>
+
+      <h3>Libertação identitária (tornaram-se povo de Deus)</h3>
+      <p>No Êxodo, Israel deixa de ser um grupo de escravos e se torna um povo, recebem uma nova consciência de quem são.</p>
+      <ul class="sub-list">
+        <li>Deus os chama de “Meu povo”. Deus forma uma nação santa, Seu povo exclusivo.</li>
+      </ul>
+
+      <div class="verso">
+        <p>“⁷ Farei de vocês o meu povo e serei o Deus de vocês. Então, vocês saberão que eu sou o Senhor, o seu Deus, que os liberta do trabalho pesado imposto pelos egípcios.</p>
+        <p>⁸ Eu os farei entrar na terra que, com a mão levantada, jurei dar a Abraão, a Isaque e a Jacó. Eu a darei a vocês como propriedade. Eu sou o Senhor".”</p>
+        <p class="referencia">Êxodo 6:7,8 | NVI</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Conexão para o sermão</h2>
+      <ul>
+        <li>Assim como uma nação busca liberdade, o ser humano busca libertação espiritual.</li>
+        <li>Israel foi liberto do Egito; nós somos libertos do pecado.</li>
+      </ul>
+    </section>
   </div>
-
-  <!-- Parte 2 -->
-  <div class="card">
-    <h2>☕ Parte 2 – Café da Tarde</h2>
-    <div class="time">⏰ 16:30 às 17:00</div>
-
-    <div class="info">
-      Pedimos que cada integrante contribua com algo para o café:<br>
-      🥖 pães | ☕ café | 🥛 leite | 🍫 achocolatado | 🍪 biscoitos | 🧀 mussarela | 🍖 presunto | 🧀 requeijão, manteiga ou margarina | 🍹 sucos | 🍎 frutas (bananas, maçãs, uvas ou outras )
-    </div>
-  </div>
-
-  <!-- Parte 3 -->
-  <div class="card">
-    <h2>🔹 Parte 3 – Repertório | Dia 07/01</h2>
-    <div class="time">⏰ 17:00 às 18:30</div>
-
-    <div class="section-title">Escalados:</div>
-    <div class="info">
-      🎤 Sérgio, Isabella — Vocal (Solo – Ministro de Louvor)<br>
-      🎤 Denise, Débora, Fabiana, Lara, Stefanea — Vocal (Apoio – Backing Vocal)<br>
-      🥁 Igor — Bateria<br>
-      🎸 Sérgio — Guitarra<br>
-      🎸 Washington — Violão<br>
-      🎸 Daniel — Baixo<br>
-      🎹 Jonatan — Teclado<br>
-      🎤 Márcio — Cantor Convidado
-    </div>
-
-    <div class="section-title">Repertório:</div>
-    <div class="info">
-      🎵 Jesus, Filho de Deus — 🎙️ Sérgio<br>
-      🎵 Se Manifestará + A Terra Clama + Deixa o Céu Descer (Pai Nosso) + Promessas Antigas (A Glória Desta Última Casa) — 🎙️ Isabella<br>
-      🎵 A Glória Desta Última Casa — 🎙️ Márcio<br>
-      🎵 Através do Louvor — 🎙️ Márcio
-    </div>
-  </div>
-
-  <!-- Parte 4 -->
-  <div class="card">
-    <h2>🔹 Parte 4 – Repertório | Dia 08/01</h2>
-    <div class="time">⏰ 18:30 às 20:00</div>
-
-    <div class="section-title">Escalados:</div>
-    <div class="info">
-      🎤 Luciana, Ronny — Vocal (Solo – Ministro de Louvor)<br>
-      🎤 Sarah, Débora, Isabella, Fabiana — Vocal (Apoio – Backing Vocal)<br>
-      🥁 Igor — Bateria<br>
-      🎸 Washington — Guitarra<br>
-      🎸 Márcio — Baixo<br>
-      🎹 Jonatan — Teclado<br>
-      🎤 Denise — Cantora Convidada
-    </div>
-
-    <div class="section-title">Repertório:</div>
-    <div class="info">
-      🎵 Deus de Obras Completas + Jeová Jireh — 🎙️ Luciana<br>
-      🎵 Toda Terra + Digno de Tudo — 🎙️ Ronny<br>
-      🎵 Se Eu Não Te Ouvir — 🎙️ Denise<br>
-      🎵 Eu Sou Teu Pai — 🎙️ Denise
-    </div>
-  </div>
-
-  <!-- Observações -->
-  <div class="card">
-    <h2>📌 Observações Importantes</h2>
-    <div class="info">
-      Caso alguma parte do ensaio seja concluída antes do horário previsto, a próxima será adiantada para finalizarmos o ensaio geral antes das 20h.<br><br>
-      É fundamental que todos cheguem pontualmente.<br><br>
-      Se alguém não puder participar, por favor, avise a liderança no privado pelo WhatsApp.<br><br>
-      Contamos com a participação de todos! 🙌🎶
-    </div>
-  </div>
-
-  <footer>
-    ADVEC Music • Conferência Profetizando 2026
-  </footer>
-
 </body>
 </html>
